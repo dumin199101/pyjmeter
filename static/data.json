@@ -1,0 +1,22 @@
+{
+  "srv1": {
+    "name": "Catalog",
+    "domain": "catalog-bluecompute.apps.ocp.icc",
+    "port": 80,
+    "path": "/micro/items",
+    "threads": 500,
+    "ramp": 1,
+    "duration": 600,
+    "protocol": "http"
+  },
+  "srv2": {
+    "name": "Inventory",
+    "domain": "inventory-bluecompute.apps.ocp.icc",
+    "port": 80,
+    "path": "/micro/inventory",
+    "threads": 500,
+    "ramp": 1,
+    "duration": 600,
+    "protocol": "http"
+  }
+}

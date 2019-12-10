@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html class="tool_full">
+    <head>
+        <title>Pressure Test APP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="static/css/mobile.css" rel="stylesheet">
+        <link href="static/css/tools.css" rel="stylesheet">
+        <link href="static/css/font-awesome.min.css" rel="stylesheet">
+        <script src='static/js/jquery.min.js'></script>
+        <script src="static/js/websocket/mobile.js"></script>
+    </head>
+    <body class="tool_full">
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <div class="outfoucs"></div>
+        <div class="menu_button tool_flex_center_XY">
+            <i class="fa fa-list menu_icon_open"></i>
+            <i class="fa fa-times menu_icon_close"></i>
+        </div>
+        <div class="menu_container">
+            <div class="menu_top"></div>
+            <div class='menu_content'>
+                <a onclick="setService('Service 1')">Service 1</a>
+                <a onclick="setService('Service 2')">Service 2</a>
+                <a onclick="setService('Service 3')">Service 3</a>
+            </div>
+        </div>
+        <div class="page_container tool_full">
+            <div class="test_title tool_full_w tool_flex_center_XY">Service 1</div>
+            <div class="test_container tool_flex_center_Y tool_flex_column">
+                <div class="test_botton_list tool_full">
+                    <!-- TODO, form -->
+                    <form method="post" class="form_bt tool_flex_column tool_full">
+                        <button onclick="setTPS(10000)">+10000 TPS</button>
+                        <button onclick="setTPS(1000)">+1000 TPS</button>
+                        <button onclick="setTPS(100)">+100 TPS</button>
+                        <button onclick="setTPS(-100)">-100 TPS</button>
+                        <button onclick="setTPS(-1000)">-1000 TPS</button>
+                        <button onclick="setTPS(-10000)">-10000 TPS</button>
+                    </form>
+                </div>
+            </div>
+            <button class="command_send_container tool_flex_center_XY tool_full_w">
+                Total TPS: 0<span id="total_tps"></span>
+            </button>
+        </div>
+    </body>
+</html>

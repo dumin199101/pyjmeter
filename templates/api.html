@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>api Test</title>
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="../static/js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+
+    <script src="../static/js/api.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form>
+            <div class="form-group">
+                <label for="tps">并发量：</label>
+                <input type="text" class="form-control" id="tps" name="tps" placeholder="并发量">
+            </div>
+            <div class="form-group">
+                <select id="service" class="form-control">
+
+                </select>
+            </div>
+
+            <button type="button" id="start" class="btn btn-default">Start</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019年9月26日, 下午01:49:36
+    Author     : FatHungLau
+*/
+
+/* ////////////////////////Scrollbar//////////////////////// */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 8px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaa; 
+    border-radius: 8px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* ////////////////////////Padding and Margin//////////////////////// */
+.tool_no_pm{
+    margin: 0;
+    padding: 0;
+}
+
+/* ////////////////////////Height and Width//////////////////////// */
+.tool_full_h{
+    height: 100%;
+}
+.tool_full_w{
+    width: 100%;
+}
+.tool_full{
+    height: 100%;
+    width: 100%;
+}
+
+/* ////////////////////////Flex center//////////////////////// */
+.tool_flex_center_Y{
+    display: flex;
+    align-items: center;
+}
+.tool_flex_center_X{
+    display: flex;
+    justify-content: center;
+}
+.tool_flex_center_XY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tool_flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.tool_flex_row{
+    display: flex;
+    flex-direction: row;
+}
